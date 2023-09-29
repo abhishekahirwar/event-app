@@ -29,12 +29,12 @@ class _EventDetailsScreenState extends State<EventDetailsScreen> {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize:
-            const Size.fromHeight(250.0), // Adjust the height as needed
+            const Size.fromHeight(200.0), // Adjust the height as needed
         child: Stack(
           children: <Widget>[
             Container(
               width: double.infinity,
-              height: 250,
+              height: 200,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(
@@ -243,7 +243,7 @@ class _EventDetailsScreenState extends State<EventDetailsScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Padding(
-                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 5),
+                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
                 child: Opacity(
                   opacity: 0.84,
                   child: Text(
@@ -278,8 +278,9 @@ class _EventDetailsScreenState extends State<EventDetailsScreen> {
           ),
           const Spacer(),
           Padding(
-            padding: const EdgeInsets.only(bottom: 20.0),
+            padding: const EdgeInsets.all(8.0),
             child: Container(
+              
               alignment: Alignment.bottomCenter,
               width: MediaQuery.of(context).size.width * 0.7,
               color: Colors.transparent,
